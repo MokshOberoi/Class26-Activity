@@ -11,6 +11,7 @@ var pig1 , pig2 ;
 var log1 , log2 , log3 , log4 ;
 var bird ;
 var bgImage ;
+var platform ;
 
 function preload(){
 
@@ -36,6 +37,8 @@ function setup() {
   });*/
 
   ground = new Ground (600,height,1200,20);
+
+  platform = new Ground(150,305,300,170);
 
   box1 =  new Box (700,320,70,70);
 
@@ -84,6 +87,7 @@ function draw() {
   log3.display();
   log4.display();
   bird.display();
+  platform.display();
 
   //drawSprites();
 
